@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href='{% static "main/css/main.css" %}'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="display-flex">
+    <header class="width-full">
+        <nav class="display-flex">
+            <ul id="ul1">
+                <a href="{% url 'about' %}"><li>О нас</li></a>
+                <li>Туры</li>
+            </ul>
+            <a href="{% url 'home' %}"><h1>toursera</h1></a>
+            <ul id="ul2">
+                <li>Отзывы</li>
+                <li>Контакты</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="display-flex">
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
