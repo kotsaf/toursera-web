@@ -12,16 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="display-flex">
+    <div id="header2" class="width-full"></div>
     <header class="width-full">
         <nav class="display-flex">
             <ul id="ul1">
-                <a href="{% url 'about' %}"><li>О нас</li></a>
-                <li>Туры</li>
+                <a href="{% url 'about' %}" class="nav-but"><li>О нас</li></a>
+                <a href="{% url 'tours' %}" class="nav-but"><li>Туры</li></a>
             </ul>
             <a href="{% url 'home' %}"><h1>toursera</h1></a>
             <ul id="ul2">
-                <li>Отзывы</li>
-                <li>Контакты</li>
+                <a href="{% url 'feedbacks' %}" class="nav-but"><li>Отзывы</li></a>
+                <a href="{% url 'contacts' %}" class="nav-but"><li>Контакты</li></a>
             </ul>
         </nav>
     </header>
