@@ -16,8 +16,8 @@ class Tours(models.Model):
 class Feedback(models.Model):
     feedbacker = models.CharField('Ваше имя', max_length=50, blank=False)
     title = models.CharField('Превью отзыва', max_length=50, blank=False)
-    feedback = models.TextField('Отзыв', max_length=500)
-    date = models.DateTimeField(default=timezone.now)
+    feedback = models.TextField('Отзыв', max_length=800)
+    date = models.DateField(default=timezone.now)
 
     def __str__(self):
         return f'Отзыв от {self.feedbacker}'

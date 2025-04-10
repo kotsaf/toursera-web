@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
 </head>
 <body class="display-flex">
     <div id="header2" class="width-full"></div>
@@ -19,7 +20,7 @@
                 <a href="{% url 'about' %}" class="nav-but"><li>О нас</li></a>
                 <a href="{% url 'tours' %}" class="nav-but"><li>Туры</li></a>
             </ul>
-            <a href="{% url 'home' %}"><h1>toursera</h1></a>
+            <a href="{% url 'home' %}"><h1>tourserΛ</h1></a>
             <ul id="ul2">
                 <a href="{% url 'feedbacks' %}" class="nav-but"><li>Отзывы</li></a>
                 <a href="{% url 'contacts' %}" class="nav-but"><li>Контакты</li></a>
@@ -30,8 +31,6 @@
         {% block content %}
         {% endblock %}
     </main>
-    <footer>
-
-    </footer>
 </body>
+<script src="/static/main/js/scripts.js"></script>
 </html>

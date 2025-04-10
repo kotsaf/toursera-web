@@ -3,7 +3,27 @@
 {% block title %} TourSera | Туры {% endblock %}
 
 {% block content %}
-<section class="feedbacks-section1">
-
-</section>
+    <section class="feedbacks-section1 display-flex">
+        <div class="feedbacks display-flex">
+            {% if feedbacks %}
+                {% for feedback in feedbacks %}
+                    <article class="feedback">
+                        <div class="feed-title">
+                            <h1>{{ feedback.title }}</h1>
+                        </div>
+                        <p>{{ feedback.feedback }}</p>
+                        <div class="feed-down display-flex">
+                            <p>{{ feedback.feedbacker }}</p>
+                            <p>Дата: {{ feedback.date }}</p>
+                        </div>
+                    </article>
+                {% endfor %}
+            {% else %}
+                <p>Отзывов пока нет.</p>
+            {% endif %}
+        </div>
+        <button>
+            Больше отзывов
+        </button>
+    </section>
 {% endblock %}
