@@ -126,21 +126,16 @@ main .section1 .name-bio p {
   -webkit-backdrop-filter: blur(8px) opacity(0.3);
           backdrop-filter: blur(8px) opacity(0.3);
 }
-main .section2 {
+main .imgsection {
   height: 92vh;
-  width: 100%;
   justify-content: center;
   align-items: center;
-  background-image: url(patagonia-text.jpg);
   background-size: cover;
   background-attachment: fixed;
   -webkit-background-clip: text;
           background-clip: text;
 }
-main .section2 .country-bio {
-  text-align: center;
-}
-main .section2 .country-bio h1 {
+main .imgsection h1 {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 200px;
@@ -151,12 +146,24 @@ main .section2 .country-bio h1 {
   width: 50%;
   color: transparent;
 }
+main .section2 {
+  background-image: url(patagonia-text.jpg);
+}
 main .section3 {
+  background-image: url(hawaii-text.png);
+}
+main .section4 {
+  background-image: url(zhangjiajie-text.jpg);
+  height: 100vh;
+}
+
+.section3 {
   height: 92vh;
 }
 
 .about-section1 {
   height: 88vh;
+  margin-top: 12vh;
 }
 
 .tours-section1 {
@@ -168,6 +175,7 @@ main .section3 {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 12vh;
 }
 .feedbacks-section1 .feedbacks {
   height: 80%;
