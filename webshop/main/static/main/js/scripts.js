@@ -3,7 +3,7 @@ const header = document.querySelector('header')
 const header2 = document.querySelector('#header2')
 
 
-
+// появление первой секции
 setTimeout(function bioname() {
     anime({
         targets: sec1,
@@ -13,6 +13,7 @@ setTimeout(function bioname() {
     })
 }, 1000);
 
+// появление шапки
 setTimeout(function headerOpac() {
     anime({
         targets: [header, header2],
