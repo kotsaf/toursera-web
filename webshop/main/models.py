@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
+# модель для туров
 class Tours(models.Model):
     name = models.CharField('Название тура',max_length=60, blank=False)
     description = models.TextField('О туре', max_length=500, blank=False)
@@ -13,6 +14,7 @@ class Tours(models.Model):
         verbose_name = 'Тур'
         verbose_name_plural = 'Туры'
 
+# модель для отзыва
 class Feedback(models.Model):
     feedbacker = models.CharField('Ваше имя', max_length=50, blank=False)
     title = models.CharField('Превью отзыва', max_length=50, blank=False)
