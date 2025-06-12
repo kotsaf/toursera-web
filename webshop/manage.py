@@ -1,4 +1,4 @@
-"""Django's command-line utility for administrative tasks."""
+"""Django cmd"""
 import os
 import sys
 
